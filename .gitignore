@@ -1,0 +1,4 @@
+*.sublime*
+build/
+node_modules/
+Thumbs.db
