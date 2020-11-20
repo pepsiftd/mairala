@@ -3,7 +3,7 @@
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
-var less = require("gulp-less");
+var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var csso = require("gulp-csso");
 var autoprefixer = require("autoprefixer");
@@ -72,7 +72,7 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
