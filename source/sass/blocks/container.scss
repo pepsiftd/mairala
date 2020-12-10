@@ -1,4 +1,7 @@
 .container {
 	margin: 0 auto;
 	max-width: 1170px;
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
 }
