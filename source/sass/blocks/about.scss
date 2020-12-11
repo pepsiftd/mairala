@@ -88,3 +88,57 @@
     content: "\f0c3";
   }
 }
+
+.about__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/rectangle_53_copy_2_8154.png");
+
+  .about__title {
+    color: #ffffff;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.about__skills-list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+
+  color: #ffffff;
+}
+
+.about__skills-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__diagram {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 152px;
+
+  border: 3px solid $heading-color;
+  border-radius: 50%;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
