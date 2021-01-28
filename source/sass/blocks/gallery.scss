@@ -1,0 +1,39 @@
+.gallery {
+  background-color: #a9a9a9;
+}
+
+.gallery__line {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.gallery__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 351px;
+
+  flex-grow: 1;
+
+  &:hover .gallery__hover {
+    opacity: 1;
+    transition: 0.2s;
+  }
+}
+
+.gallery__hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.05s;
+}

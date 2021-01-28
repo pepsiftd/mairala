@@ -1,0 +1,19 @@
+.portfolios {
+  background-color: $light-bg-color;
+}
+
+.portfolios__title {
+  color: $heading-color;
+
+  &--large {
+    font-size: 40px;
+  }
+}
+
+.portfolios__text {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 25%;
+
+  text-align: center;
+}
