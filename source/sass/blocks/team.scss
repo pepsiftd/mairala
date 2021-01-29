@@ -1,0 +1,15 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $even-section-bg-color;
+}
+
+.team__title {
+  color: $heading-color;
+}
+
+.team__text {
+  max-width: 25%;
+}
